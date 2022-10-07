@@ -1,0 +1,147 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.App {
+    padding: 0px 3%;
+}
+
+/* Splash Screen */
+.intro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 3.0rem;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+/* ------- */
+
+/* Nav Bar */
+li, a, button {
+    text-decoration: none;
+}
+
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.navBar h4 {
+    font-size: 1.6rem;
+    margin-right: auto;
+}
+
+.navLinks {
+    list-style: none;
+}
+
+.navLinks li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.navLinks li a:not(.cta) {
+    padding:10px 20px;
+    color: black;
+    transition: all 0.5s ease 0s;
+}
+
+.cta {
+    padding:10px 20px;
+    color: white;
+    background-color: black;
+    transition: all 0.5s ease 0s;
+}
+
+.cta:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding: 9 19px;
+}
+
+.navLinks li a:not(.cta):hover {
+    color: white;
+    background-color: black;
+}
+
+/* HomePage */
+.homepage {
+    width: 100%;
+    height: 88vh;
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.homepage img {
+    margin-right: 80px;
+}
+
+.myInfo {
+    width: 44%;
+    height: 60%;
+}
+
+.myInfo h1 {
+    font-size: 3.0rem;
+    font-weight: bolder;
+}
+
+.myInfo p {
+    margin: 40px 0;
+    font-size: 2.0rem;
+}
+
+.socialMedia a{
+    color: inherit;
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 3.0rem;
+}
