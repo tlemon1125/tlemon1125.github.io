@@ -1,0 +1,27 @@
+.homepage {
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.myInfo {
+    width: 44%;
+    height: 60%;
+}
+
+.myInfo h1 {
+    font-size: 3.0rem;
+    font-weight: bolder;
+}
+
+.myInfo p {
+    margin: 40px 0;
+    font-size: 2.0rem;
+}
+
+.socialMedia a{
+    color: inherit;
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 3.0rem;
+}
