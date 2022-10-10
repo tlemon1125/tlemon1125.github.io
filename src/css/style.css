@@ -5,10 +5,6 @@
    font-family: 'Poppins', sans-serif;
 }
 
-*::-webkit-scrollbar {
-    display: none;
-}
-
 header {
     position: relative;
     left: 0;
@@ -17,8 +13,51 @@ header {
     height: 80px;
 }
 
+*::-webkit-scrollbar {
+    display: none;
+}
+
 .App {
     padding: 0px 3%;
+}
+
+/* Typing Animation */
+.dynamic {
+    position: relative;
+}
+
+.dynamic::before,
+.dynamic::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.dynamic::before {
+    background: white;
+    animation: typing 3s steps(9) 1s forwards;
+}
+
+.dynamic::after {
+    width: 0.125rem;
+    background: black;
+    animation: 
+        typing 3s steps(9) 1s forwards,
+        blinking 1s steps(9) infinite;
+}
+
+@keyframes typing {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blinking {
+    to {
+        background: transparent;
+    }
 }
 
 /* Nav Bar */
@@ -50,7 +89,6 @@ li, .link, button {
 .navLinks li .link:not(.cta) {
     padding:10px 20px;
     color: black;
-    transition: all 0.5s ease 0s;
 }
 
 .cta {
@@ -68,7 +106,14 @@ li, .link, button {
 }
 
 .navLinks li .link:not(.cta):hover {
-    color: white;
-    background-color: black;
+    animation: 
+        buttonBlink 1s infinite alternate;
+}
+
+@keyframes buttonBlink {
+    to {
+        color: white;
+        background-color: black;
+    }
 }
 /* ------ */

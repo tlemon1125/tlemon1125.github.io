@@ -4,7 +4,7 @@ import './AboutSection.css';
 
 function AboutSection() {
     return (
-        <section className='secondPage hidden'>
+        <section className='about'>
             <p>Hello</p>
         </section>
     );
