@@ -8,7 +8,9 @@ function AboutSection() {
         <section className='about'>
             <h1 data-aos='flip-up' data-aos-duration='2000' data-aos-once='true'>About Me</h1>
             <div className='aboutInfo'>
-                <img src={passportPic} data-aos='flip-right' data-aos-duration='2000' data-aos-once='true'/>
+                <div className='aboutImg' data-aos='flip-right' data-aos-duration='2000' data-aos-once='true'>
+                    <img src={passportPic}/>
+                </div>
                 <div className='aboutDesc' data-aos='flip-left' data-aos-duration='2000' data-aos-once='true'>
                     <p>
                         My name is Khew Jia Peng. I am 22 years old, study Bachelor of Computer Science 

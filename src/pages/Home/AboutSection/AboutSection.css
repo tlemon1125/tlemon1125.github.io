@@ -17,12 +17,43 @@
     
 }
 
-.aboutInfo img {
+.aboutImg {
     width: 250px;
     height: 250px;
     border-radius: 2rem;
-    border: 10px solid black;
-    margin-left: 10px;
+    position:relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutImg::before {
+    content: "";
+    background-image: conic-gradient(
+        black 20deg,
+        transparent 120deg
+    );
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg)
+    }
+}
+
+.aboutImg img {
+    width: 235px;
+    height: 235px;
+    z-index: 1;
+    border-radius: 2rem;
 }
 
 .aboutInfo .aboutDesc {
