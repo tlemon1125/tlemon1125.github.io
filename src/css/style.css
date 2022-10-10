@@ -37,14 +37,14 @@ header {
 
 .dynamic::before {
     background: white;
-    animation: typing 3s steps(9) 1s forwards;
+    animation: typing 3s steps(9) 3s forwards;
 }
 
 .dynamic::after {
     width: 0.125rem;
     background: black;
     animation: 
-        typing 3s steps(9) 1s forwards,
+        typing 3s steps(9) 3s forwards,
         blinking 1s steps(9) infinite;
 }
 

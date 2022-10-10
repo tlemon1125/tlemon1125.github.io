@@ -4,12 +4,15 @@ import reportWebVitals from './reportWebVitals';
 
 import './css/style.css';
 import App from './App';
+import SplashScreen from './pages/SplashScreen';
 import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <SplashScreen />
       <App />
     </BrowserRouter>
   </React.StrictMode>

@@ -1,3 +1,32 @@
 .about {
     width: 100%;
+    height: 58vh;
+}
+
+.about h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.0rem;
+    font-weight: bolder;
+}
+
+.aboutInfo {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.aboutInfo img {
+    width: 250px;
+    height: 250px;
+    border-radius: 2rem;
+    border: 10px solid black;
+    margin-left: 10px;
+}
+
+.aboutInfo .aboutDesc {
+    width: 50%;
+    text-align: justify;
+    font-size: 1.4rem
 }
