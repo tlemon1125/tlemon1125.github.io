@@ -5,7 +5,7 @@ import passportPic from '../../../assets/images/passport-photo.jfif';
 
 function AboutSection() {
     return (
-        <section className='about'>
+        <section className='about' id='about'>
             <h1 data-aos='flip-up' data-aos-duration='2000' data-aos-once='true'>About Me</h1>
             <div className='aboutInfo'>
                 <div className='aboutImg' data-aos='flip-right' data-aos-duration='2000' data-aos-once='true'>

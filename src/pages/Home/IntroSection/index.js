@@ -5,7 +5,7 @@ import ProgramImage from '../../../assets/images/pngwing.com.png';
 
 function IntroSection() {
     return (
-        <section className='homepage'>
+        <section className='homepage' id='home'>
             <div className='myInfo' data-aos="slide-right" data-aos-duration="2000" data-aos-once='true'>
                 <h1>KHEW JIA PENG</h1>
                 <p>A passionate cybersecurity student / web developer from Malaysia who always discover the new knowledge.</p>
